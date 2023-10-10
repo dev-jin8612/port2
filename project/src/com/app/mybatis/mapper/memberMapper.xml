@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+	<select id="checkId" resultType="_int">
+		select count(member_id) from tbl_member where member_id = #{memberid}
+	</select>
+
+	<!-- 임시로 넣은 정보들을 나중에 수정하기 -->
+	<insert id="insert">
+		insert into tbl_member
+		(member_id, member_pw, member_name,member_nick,member_img, member_hp)
+		values(#{memberid}, #{memberpw}, #{membername}, #{membernick}, #{memberimg}, #{memberhp})
+	</insert>
+
+	<select id="login" resultType="memberDTO">
+		select member_id from tbl_member where member_id = #{memberid} and member_pw = #{memberpw}
+	</select>
+
+	<select id="profile" resultType="memberDTO">
+		select id, member_id, member_pw, member_name, member_nick, member_img, member_hp
+		from tbl_member where id = #{id}
+	</select>
+</mapper>

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* --------공통 css-------- */
+.sound-only{display: none;}
+
+/* --------버튼 공통 css------- */
+.full_btn{background: #00c4c4; border-color: #00c4c4; display: inline-flex; color: #fff; border-radius: 5px; padding: 9px 15px;  justify-content: center; align-items: center;transition: all 0.3s;}
+.blank_btn{background: #fff; border:1px solid #00c4c4; display: inline-flex; color: #00c4c4; border-radius: 5px; padding: 9px 15px;  justify-content: center; align-items: center; transition: all 0.2s;}
+.blank2_btn{background: #fff; border:1px solid rgba(0, 0, 0, 0.15); display: inline-flex; color: rgba(0, 0, 0, 0.54); border-radius: 5px; padding: 9px 15px;  justify-content: center; align-items: center; transition: all 0.2s;}
+.blank_btn:hover{border-color: #00c4c4;background-color: #e7f9f9;}
+
+/* 레이어 공통 */
+.layer-popup{width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 100; display: none;}
+.layer-popup .layer-bg{background: #00000055; width: 100%; height: 100%;}
+.layer-popup .layer-head{text-align: right;}
+.layer-popup .inner-layer{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: #fff; border-radius: 10px; padding: 24px;}
+.layer-popup .inner-layer .btn-wrap{text-align: right; margin-top: 10px;}
+.layer-popup .close-btn{width: 24px;height: 24px;}
+
+
+/* -------------------------헤더------------------------- */
+.header{width: 100%; height: auto; background: #fff; position: relative; border-bottom: 1px solid #f2f4f6; padding: 0; height: 56px; text-align: left; z-index: 99;}
+.inner-header{padding: 0 16px; max-width: 1440px; height: 100%; margin: 0 auto; display: flex; justify-content: center;}
+h1.feed-tit{display: none;line-height: 30px;font-size: 20px;font-weight: 600; padding: 16px 0;}
+h1.logo{line-height: 22px; display: inline-block; font-size: 32px; width: auto;padding: 14px 0 18px;}
+
+/* 헤더 - gnb */
+.header nav{flex-shrink: 0; width: auto;}
+.header .gnb{margin-left: 24px; width: auto;}
+.header .gnb>li{display: inline-block; vertical-align: middle; padding: 14px 16px; width: auto;}
+.header .gnb li a,
+.header .gnb li button{line-height: 30px;font-size: 20px;font-weight: 600;position: relative;transition: .2s;color: #212529;}
+.header .gnb li button svg{display: inline-block;position: relative;transform: rotate(90deg);animation: all .15s forwards;margin-left: 4px;color: #212529;font-size: 18px; width: 18px; height: 18px;}
+
+/* ------------------------- 아이디 / 비밀번호 찾기 ------------------------- */
+
+
+/* 아이디 / 비밀번호찾기 헤더 */
+.find-header {background: #fff; border-bottom: 1px solid #f2f4f6;}
+.find-header .mo-head{display: none; width: 100%}
+.find-header .gnb{width: 122px;position: absolute;right: 80px;left: auto;color: #495057;display: flex;justify-content: space-between;}
+.find-header .gnb a{font-size: 15px;line-height: 55px;}
+.login-container .inner-container{max-width: 400px;margin: 0 auto;padding: 40px 16px;}
+.login-title{font-size: 36px;font-weight: 600; margin-bottom: 24px;}
+
+/* find 컨테이너 */
+.find-container{width: 100%;}
+.find-container .title-wrap{background: #fff; border-bottom: 1px solid #f2f4f6;}
+.find-container .inner-title-wrap{max-width: 1024px; margin: 0 auto;}
+.find-container h2{padding: 56px 16px 36px;text-align: left;line-height: 40px;font-size: 32px; font-weight: 600;}
+.find-container .tab-wrap{background: #fff; padding: 0 16px;}
+.find-container .tab-wrap a{display: inline-block;width: auto;height: 47px;text-align: center;line-height: 48px;color: #90949c; font-size: 15px;}
+.find-container .tab-wrap a.active{color: #00b2b2; border-bottom: 2px solid #00b2b2;}
+.find-container .tab-wrap a + a{margin-left: 20px;}
+.find-input-wrap{background: #f5f7fa; min-height: calc(100vh - 238px);}
+.find-input-wrap .inner-input-wrap{max-width: 400px; margin: 0 auto; padding: 24px 16px 160px;}
+.find-input-wrap .info{margin-bottom: 40px;color: #0000008a;line-height: 20px;font-size: 15px;font-weight: 400;}
+.find-input-wrap .input-con{margin-bottom: 24px;}
+.find-input-wrap #findBtn{width: 100%; height: 48px; font-size: 17px;}
+
+/* find ok */
+.find-ok h3{margin-top: 24px;margin-bottom: 12px;color: #000000d6;line-height: 36px;font-size: 28px; font-weight: 600;}
+.find-ok .btn-wrap button{display: block; width: 100%; height: 48px; font-size: 17px;}
+.find-ok .btn-wrap button + button{margin-top: 16px;}
+
+/* 비밀번호 찾기 레이어창 */
+#findPwLayer .inner-layer{max-width: 560px;}
+#findPwLayer svg{width: 24px; height: 24px;}
+#findPwLayer h3{margin-top: 12px;margin-bottom: 12px;line-height: 32px;color: #44484b;font-size: 24px;font-weight: 600;}
+#findPwLayer P{margin: 12px 0;line-height: 24px;font-size: 17px;font-weight: 400; color: #44484b;}
+#findPwLayer .blank2_btn{height: 48px; font-size: 17px; font-weight: 500;}
+
+/* 인풋 공통 */
+
+.input-area{margin-top: 12px; font-weight: 400;}
+.input_txt{width: 100%;border-radius: 4px;border: 1px solid rgba(0, 0, 0, 0.15);height: 48px;line-height: 1.2em;font-size: 17px;font-weight: 400;outline: none;transition: all 0.4s;padding: 0 0.9411764706em;box-sizing: border-box;}
+.input_txt::placeholder{line-height: 1.2em;font-size: 17px;font-weight: 400; color: #adb5bd;}
+.input_txt:focus{border-color: #00c4c4;}
+.input-con{margin: 12px 0;}
+.forgot{text-align: right;line-height: 24px;font-size: 13px;}
+.forgot a{color: #adb5bd;}
+
+/* find 인풋 에러 메세지 */
+.message_wrap{color: #f25555;margin-top: 4px;line-height: 18px;font-size: 13px;font-weight: 400;font-style: normal; display: none;}
+.input_txt.error{border-color: #f66;background-color: rgba(255, 155, 155, 0.06);}
+.input_txt.error + .message_wrap{display: block;}
+
+
+
+/* 로그인 - 미디어쿼리 */
+@media screen and (max-width:1097px) {
+    .find-header{display: block;}
+    .find-header h1.logo, nav{display: block;}
+}
+@media screen and (max-width:768px) {
+    .find-header h1.logo, nav{display: none;}
+    .feed-section .con-mid .arrow{display: none;} 
+    .find-header{display: block;}
+    .find-header .mo-head{display: block; display: flex; justify-content: space-between;}
+    .find-header .mo-head button{line-height: 22px;display: inline-block;font-size: 32px;width: auto;padding: 14px 0 18px;}
+    .find-header .gnb{display: none;}
+    .login-title{font-size: 30px;}
+}

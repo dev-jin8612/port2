@@ -1,0 +1,53 @@
+@charset "UTF-8";
+iframe,
+img,
+video {
+  vertical-align: top;
+}
+
+#ch-plugin {
+  position: relative !important;
+  display: block !important;
+  color-scheme: normal !important;
+  white-space: normal !important;
+  z-index: 1000 !important;
+}
+
+.rightPosition {
+  right: 25px !important;
+}
+
+.ch-desk-messenger {
+  box-shadow: rgba(255, 255, 255, 0.08) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0.08) 0px 0px 2px 1px,
+    rgba(0, 0, 0, 0.6) 0px 12px 60px;
+  animation: 0.25s ease-out 0s 1 normal none running jZyQVL;
+  position: fixed !important;
+  bottom: 25px !important;
+  width: 40% !important;
+  min-width: 400px;
+  height: 90% !important;
+  min-height: 520px !important;
+  max-height: 680px !important;
+  overflow: hidden !important;
+  background-color: transparent !important;
+  border-radius: 30px !important;
+}
+element.style {
+  position: relative !important;
+  height: 100% !important;
+  width: 100% !important;
+  border: none !important;
+}
+
+#ch-plugin-script-iframe {
+  border-radius: 30px !important;
+
+  height: 100% !important;
+  width: 100% !important;
+  border: none !important;
+}
+
+.visibility {
+  visibility: hidden;
+}
+

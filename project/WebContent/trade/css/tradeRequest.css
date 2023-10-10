@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+input,textarea {
+  background: none;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.Page_container {
+  position: relative;
+  padding: 24px 16px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .Page_container {
+    padding: 40px 64px;
+    width: calc(100vw - 360px);
+    min-width: 750px;
+    max-width: 1280px;
+  }
+}
+
+.Page_container .Page_content {
+  position: relative;
+  background-color: white;
+}
+.TextField_textField .TextField_field {
+  position: relative;
+}
+/* @media screen and (min-width: 769px) {
+  .Page_container .Page_content {
+    margin-top: 80px;
+  }
+} */
+
+.TextField_textField {
+  display: block;
+  position: relative;
+}
+
+.spacing-2 {
+  margin-bottom: 4px;
+}
+.spacing-4 {
+  margin-bottom: 12px;
+}
+.spacing-5 {
+  margin-bottom: 16px;
+}
+.spacing-6 {
+  margin-bottom: 20px;
+}
+.spacing-9 {
+  margin-bottom: 80px;
+}
+
+.Section_container .Section_header .Section_guide {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 8px;
+  gap: 8px;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  max-width: 50%;
+}
+.Section_container .Section_description {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  color: #868e96;
+}
+.Section_container .Section_description ul {
+  margin-left: 5%;
+}
+.IULField_container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #adb5bd;
+}
+.IULButton_container {
+  display: inline-block;
+  position: relative;
+}
+
+.Button_button.Button_tertiaryGrey.Button_contained {
+  border-color: #f2f4f6;
+  background-color: #f2f4f6;
+  color: #495057;
+}
+.Button_button.Button_sm {
+  padding: 6px 11px;
+  line-height: 1.5;
+  font-size: 12px;
+}
+.Button_button.Button_tertiaryGrey {
+  border-color: #f2f4f6;
+  color: #495057;
+}
+
+.Modal {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  border-radius: 50%;
+  background: url('../img/link.png') no-repeat 50%/100%;
+  width: 44px;
+  height: 44px;
+  z-index: 999;
+}
+
+@media screen and (min-width: 1097px) {
+  .Modal {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.Button_button.Button_xl {
+  padding: 13px 27px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.Modal button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.ALcontainer {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.ALcontainer::-webkit-scrollbar {
+  display: none;
+}
+
+
+.ALmain{
+  background-color: white;
+}

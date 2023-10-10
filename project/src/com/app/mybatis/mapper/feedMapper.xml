@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="feed">
+	<select id="feedMyCount" resultType="_int">
+		select count(id) as "피드 수"  from tbl_feed
+		where member_id = ${member_id};
+	</select>
+	
+	<select id="myFeedList" resultType="FeedDTO">
+		select
+		m.id,
+		f.board_title,
+		f.board_contents,
+		f.board_date,
+		i.file_original_name,
+		count(g.id) as "goodCnt"
+		from 
+		tbl_member m
+		left outer join tbl_feed f on m.id = f.member_id
+		left outer join tbl_feed_img i on f.id = feed_img and i.img_num = 1
+		left outer join tbl_good g on m.id = g.member_id and f.id = g.feed_id 
+		where m.id = ${id}
+		group by m.id,
+		f.board_title,
+		f.board_contents,
+		f.board_date,
+		i.file_original_name;
+	</select>
+</mapper>

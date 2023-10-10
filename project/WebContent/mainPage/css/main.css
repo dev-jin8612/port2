@@ -1,0 +1,312 @@
+.top {display: flex; max-width: 1440px; margin: 0 auto; width: 100%; border-bottom: 1px solid #f2f4f6}
+.side {
+	padding: 40px 80px;
+    width: 100%;
+	margin-top: 0;
+	border-right: 1px solid #f2f4f6;
+}
+.top .side-title{line-height: 38px;font-size: 28px;font-weight: 700; margin-bottom: 20px}
+.top .side-img-wrap{
+	clear: right;
+    margin-bottom: 8px;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.top .contents{
+	display: flex;
+	margin: 0 32px 16px 0;
+}
+.top .img{
+	background: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0512/20230512171600792_213344.png/wadiz/resize/600/format/jpg/quality/85/") no-repeat 50%/cover;
+    width: 100%;
+    height: 130px;
+}
+.top .infor{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    width: 100%;
+    height: auto;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+.top .sub_title{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    width: 100%;
+    height: auto;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    margin-bottom: 5px;
+}
+.top .user{
+	font-size: 14px;
+    font-weight: 600;
+    margin-right: 4px;
+    line-height: 20px;
+    color: #00c4c4;
+}
+
+.main{max-width: 1440px; margin: 0 auto; width: 100%; border-bottom: 1px solid #f2f4f6}
+.middle {
+	padding: 40px 80px;
+    width: 100%;
+}
+.middle .title h2{
+	line-height: 36px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #000;
+    
+}
+.middle .title p{
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+.with {
+	display: flex;
+	width: 100%;
+}
+.with .contents{
+	margin: 0;
+    padding: 0;
+}
+.with .contents .solid{
+	display: block;
+	border: 1px solid rgba(0,0,0,.06);
+}
+.with .infor {
+    float: none;
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+    height: auto;
+}
+.with .img{
+    background: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0512/20230512171600792_213344.png/wadiz/resize/600/format/jpg/quality/85/") no-repeat 50%/cover;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: .25s;
+    width: 100%;
+    max-width: 100%;
+    height: 222px;
+    min-height: 10px;
+}
+.with .inf-contents{
+	padding: 12px 16px;
+    height: 54px;
+}
+.with .inf-contents .inf-title{
+	float: left;
+    margin-top: -4px;
+}
+.with .inf-contents .inf-title h1{
+	font-size: 15px;
+	font-weight: 700;
+}
+.with .inf-contents .inf-title p{
+	font-size: 13px;
+	color: #868e96;
+}
+
+.bottom{
+	margin: 0 auto;
+    padding: 40px 80px;
+    width: 100%;
+    max-width: 1440px;
+}
+.up {
+	position: relative;
+}
+.trade .title{
+	margin-bottom: 24px;
+}
+.trade .title h2{
+	line-height: 36px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #000;
+}
+.trade .page {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: fit-content;
+}
+button {
+	background-color: transparent;
+}
+/* .trade .page .infor {
+	position: absolute;
+    width: 100%;
+} */
+.trade .left-button {
+	cursor: default;
+    color: rgba(0,0,0,.15);
+    left: 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    line-height: 38px;
+    color: rgba(0,0,0,.54);
+    font-size: 20px;
+}
+.trade .right-button {
+	right: 0;
+	position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    line-height: 38px;
+    color: rgba(0,0,0,.54);
+    font-size: 20px;
+}
+.trade .page .svg {
+	display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.trade .page .left-button svg{transform:rotate(180deg);}
+.trade .page svg {
+	margin: 0 auto;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.trdae .page .left-button path {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    d: path("M 16.076 2.576 l 0.848 0.848 L 8.35 12 l 8.575 8.576 l -0.848 0.848 L 6.65 12 l 9.425 -9.424 Z");
+}
+.trdae .page .right-button path {
+	fill-rule: evenodd;
+    clip-rule: evenodd;
+    d: path("M 7.924 2.576 l -0.848 0.848 L 15.65 12 l -8.575 8.576 l 0.848 0.848 L 17.35 12 L 7.924 2.576 Z");
+}
+.trade .page ul {
+	display: inline-block;
+    margin: 0 34px;
+}
+.trade .page li {
+	display: inline-block;
+    width: fit-content;
+    height: 34px;
+    line-height: 34px;
+    padding: 0px 4px;
+    margin-right: 0px !important;
+}
+.trade .page button {
+	cursor: pointer;
+    width: inherit;
+    height: inherit;
+    color: rgba(0,0,0,.54);
+    width: fit-content;
+}
+.trade .page li.active button{color: #00b2b2;}
+.trade ul {
+	display: flex;
+}
+.trade .slide-wrap{overflow: hidden;}
+.trade .slide-ul{
+	position:relative;
+	width: 400%;
+	transition:all 0.2s;
+	left: 0
+}
+.trade .slide-ul li {
+    width: 33.3333%;
+}
+.trade li:not(:last-child){margin-right: 32px}
+.trade .contents {
+	border: 1px solid #e9ecef;
+    box-shadow: none;
+}
+.trade .img-box {
+	float: none;
+    margin-bottom: 8px;
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.trade .img {
+	background: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0512/20230512171600792_213344.png/wadiz/resize/600/format/jpg/quality/85/") no-repeat 50%/cover;
+	width: 100%;
+    height: 226px;
+}
+.trade .text{
+	padding: 0 16px 6px;
+}
+.trade .text .trade-title{margin: 16px 0 10px}
+.trade .text .trade-title h1{
+	font-size: 15px;
+	font-weight: 600;
+}
+.trade .trade-contents {
+	line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    border: 1px solid #e9ecef;
+    border-radius: 3px;
+    padding: 12px 16px;
+    font-weight: 700;
+}
+.trade .trade-contents {
+	font-size: 13px;
+    color: #868e96;
+}
+.trade .svg {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 36px;
+    color: rgba(0,0,0,.54);
+}
+.trade .contents svg {
+	transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.trade path {
+	    fill-rule: evenodd;
+    clip-rule: evenodd;
+    d: path("M 7.924 2.576 l -0.848 0.848 L 15.65 12 l -8.575 8.576 l 0.848 0.848 L 17.35 12 L 7.924 2.576 Z");
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
